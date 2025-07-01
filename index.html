@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Rock, Paper, Scissors</h1>
+        <p>First to 5 points wins!</p>
+
+        <div class="scores">
+            <div class="score-box">
+                <span>You</span>
+                <div id="human-score-display">0</div>
+            </div>
+            <div class="score-box">
+                <span>Computer</span>
+                <div id="computer-score-display">0</div>
+            </div>
+        </div>
+
+        <h2>Choose your weapon:</h2>
+        <div class="choices">
+            <button class="choice-btn" id="rock">✊</button>
+            <button class="choice-btn" id="paper">✋</button>
+            <button class="choice-btn" id="scissors">✌️</button>
+        </div>
+
+        <div class="results">
+            <p id="round-result">Let's begin!</p>
+            <p id="game-winner"></p>
+        </div>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <!-- 'defer' ensures the script runs after the HTML is parsed -->
+    <script src="script.js" defer></script>
+</body>
+</html>

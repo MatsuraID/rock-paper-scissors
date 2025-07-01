@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --accent-color: #e74c3c;
+    --light-bg: #ecf0f1;
+    --dark-text: #2c3e50;
+    --light-text: #ffffff;
+    --border-radius: 12px;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: var(--light-text);
+    padding: 30px 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.scores {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.score-box {
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    background-color: var(--light-bg);
+    min-width: 120px;
+}
+
+#human-score-display {
+    color: var(--secondary-color);
+}
+
+#computer-score-display {
+    color: var(--accent-color);
+}
+
+.choices {
+    margin: 30px 0;
+}
+
+.choice-btn {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    border: none;
+    padding: 15px 30px;
+    margin: 5px;
+    border-radius: var(--border-radius);
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.choice-btn:hover {
+    transform: translateY(-3px);
+    background-color: #2980b9;
+}
+
+.results {
+    margin-top: 20px;
+    font-size: 1.1em;
+    min-height: 50px; /* Reserve space to prevent layout shifts */
+}
+
+#round-result {
+    font-weight: 600;
+}
+
+#game-winner {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 20px;
+    color: var(--secondary-color);
+}
